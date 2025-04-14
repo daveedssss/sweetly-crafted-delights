@@ -1,26 +1,295 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sweetly-crafted-delights</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="Lovable Generated Project" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetly Crafted Delights</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="#home" class="navbar-logo">Sweetly Crafted</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="navbar-links desktop-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars menu-icon"></i>
+                    <i class="fas fa-times close-icon"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span class="text-primary">Sweetly Crafted</span> <br>
+                        <span class="text-gold">Delights</span>
+                    </h1>
+                    <p>
+                        Indulge in exquisite pastries crafted with passion and precision by Dave Sebastien Ghermino, 
+                        where every bite tells a story of tradition and innovation.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">
+                            Explore Our Menu
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1609950547346-a4f431435b2b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1170" alt="Assorted pastries displayed beautifully">
+                    <div class="hero-image-overlay"></div>
+                    <div class="hero-image-caption">
+                        <p class="caption-title">Master Pastry Chef</p>
+                        <h3>Dave Sebastien Ghermino</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About the Chef</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="about-image">
+                        <img src="public/lovable-uploads/56e8bd90-459c-469d-9345-e4aa446d0fbc.png" alt="Dave Sebastien Ghermino - Master Pastry Chef">
+                    </div>
+                    <div class="about-quote">
+                        <p>"Pastry is poetry that melts on your tongue."</p>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>Dave Sebastien Ghermino</h3>
+                    <p>
+                        Welcome to my world of sweet creations! My journey into pastry began over 15 years ago when I fell in love with the art of transforming simple ingredients into extraordinary delights.
+                    </p>
+                    <p>
+                        After training in Paris under renowned pastry chefs and working in prestigious establishments across Europe, I returned home to start Sweetly Crafted Delights - a pastry boutique where tradition meets innovation.
+                    </p>
+                    <p>
+                        Each pastry I create is a reflection of my dedication to exceptional quality and my passion for pushing the boundaries of flavor and presentation. I believe in using only the finest seasonal ingredients, sourced locally whenever possible.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-card">
+                            <i class="fas fa-birthday-cake"></i>
+                            <h4>Master Pastry Chef</h4>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-award"></i>
+                            <h4>Award Winning</h4>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-clock"></i>
+                            <h4>15+ Years Experience</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>
+                    Discover our selection of handcrafted pastries and desserts made with the finest ingredients and exceptional attention to detail.
+                </p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Pastries">Pastries</button>
+                <button class="filter-btn" data-filter="Cakes">Cakes</button>
+                <button class="filter-btn" data-filter="Bread">Bread</button>
+                <button class="filter-btn" data-filter="Desserts">Desserts</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Menu items will be added dynamically with JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>
+                    Have questions or want to place a special order? Get in touch with us directly or fill out the form below.
+                </p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Special Order Request">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Tell us about your request or inquiry..." rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Contact Information</h3>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>09942553507</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>davesebastienghermino@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>123 Pastry Lane, Bakery District</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Business Hours</h4>
+                                    <p>
+                                        Monday to Friday: 7:00 AM - 7:00 PM<br>
+                                        Weekends: 8:00 AM - 5:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-btn">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Sweetly Crafted</h3>
+                    <p>
+                        Indulge in exquisite pastries crafted with passion and precision by Dave Sebastien Ghermino,
+                        where every bite tells a story of tradition and innovation.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>09942553507</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>davesebastienghermino@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Pastry Lane, Bakery District</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Sweetly Crafted Delights by Dave Sebastien Ghermino. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
