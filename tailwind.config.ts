@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				gold: {
+					light: '#F5DEB3',
+					DEFAULT: '#D4AF37',
+					dark: '#B8860B'
+				},
+				pastry: {
+					cream: '#FEF9ED',
+					pink: '#FFD6D6',
+					brown: '#A67C52',
+					beige: '#F5E1B5'
 				}
+			},
+			fontFamily: {
+				playfair: ['Playfair Display', 'serif'],
+				poppins: ['Poppins', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +100,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-up': 'fade-up 0.5s ease-out forwards'
+			},
+			backgroundImage: {
+				'hero-pattern': "url('/src/assets/hero-bg.jpg')",
 			}
 		}
 	},
