@@ -14,7 +14,7 @@ const About = () => {
           <div className="relative">
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1169"
+                src="/public/lovable-uploads/56e8bd90-459c-469d-9345-e4aa446d0fbc.png"
                 alt="Dave Sebastien Ghermino - Master Pastry Chef"
                 className="w-full h-[500px] object-cover"
               />
